@@ -1,0 +1,20 @@
+.footer__list{
+    list-style: none;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+
+    &__item{
+        color : $color-footer-link;
+        font-family: "Source Code Pro", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        padding: 0px 8px;
+        display: inline;
+
+    }
+}

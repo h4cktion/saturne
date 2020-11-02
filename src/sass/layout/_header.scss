@@ -1,0 +1,26 @@
+.logo{
+    height: 8rem;
+    margin-top: 1rem;
+    float: left;
+
+    @include respond(phone){
+        display: none;
+    }
+}
+
+.account{
+    color : #AAAAAA;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: #AAAAAA solid 1px;
+    width: 30%;
+    margin-top: 3rem;
+    padding: 1rem;
+    float: right;
+    border-bottom-right-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+
+    @include respond(phone){
+        display: none;
+    }
+}

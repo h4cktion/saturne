@@ -1,0 +1,24 @@
+
+/*
+    $breakpoint arguement choicies :
+    - phone         : 0 - 600px
+    - tab-port      : 600 - 900px
+    - tab-land      : 900 - 1200px
+    [1200 - 1800]   : is where our normal styles apply
+    - big-desktop   : more than 1800px
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 600px) { @content};
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 900px) { @content};
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 1200px) { @content};
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 1800px) { @content};
+    }
+    
+}

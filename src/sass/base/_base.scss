@@ -1,0 +1,140 @@
+html{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Source Code Pro', monospace, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    margin: 0;
+    background: linear-gradient(#0E1D15, #0E1D15);
+    
+    color :$color-green;
+
+}
+
+.App{
+    height: 100vh;
+}
+
+
+h1{
+    font-size: 2rem;
+    text-shadow: #53ffe2 0px 0px 8px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    border-bottom: $color-green solid 2px;
+    display: table-cell;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    
+    @include respond(phone){
+        display: block;
+        padding-top: 0.5rem;
+    }
+    
+}
+
+h2{
+    text-shadow: #{$color-green} 0px 0px 18px;
+    font-size: 3rem;
+    margin-top: 10rem;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10rem;
+
+    @include respond(phone){
+        padding-left: 1rem;
+        margin-top: 5rem;
+    }
+    @include respond(tab-port){
+        padding-left: 1rem;
+        margin-top: 5rem;
+    }
+}
+
+h3{
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.row{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+    .col-1-of-2{
+        width: calc((100% - #{$horisontal-margin}) / 2);
+        float: left;
+
+        @include respond(tab-port){
+            width: 50%;
+        }
+        @include respond(phone){
+            width: 100%;
+        }
+
+    }
+    .col-1-of-3{
+        width: calc((100% - #{$horisontal-margin}) / 3);
+        float: left;
+
+        @include respond(phone){
+            width: 100%;
+        }
+
+        @include respond(tab-port){
+            width: 100%;
+        }
+    }
+    .col-2-of-3{
+        width: calc(2 * ((100% - #{$horisontal-margin}) / 3));
+        float: left;
+
+        @include respond(phone){
+            width: 100%;
+        }
+
+        @include respond(tab-port){
+            width: 100%;
+        }
+    }
+
+    .col-1{
+        width: 100%;
+        float: left;
+    }
+
+}
+
+a, a:visited{
+    color: $color-low-green;
+    text-decoration: none;
+
+    .blockNumber{
+        font-size: 1.6rem;
+        font-weight: bold;
+        border: $color-low-green solid 1px;
+        width: 30%;
+        margin-top: 3rem;
+        padding: 1rem;
+        float: right;
+        border-bottom-left-radius: 10px 10px;
+        border-top-left-radius: 10px 10px;
+
+        @include respond(phone){
+            display: none;
+        }    
+
+        &:hover{
+            border: $color-green solid 1px;
+        }
+    }
+    
+    &:hover{
+    color: $color-green;
+    }
+}

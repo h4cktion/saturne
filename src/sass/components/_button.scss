@@ -1,0 +1,18 @@
+.btn{
+    color: black;
+    background: $color-green;
+    height: 5rem;
+    width: 50%;
+    font-weight: bold;
+    border: medium none;
+    font-family: "Source Code Pro", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+
+    &:hover{
+        background-color: white;;
+    }
+}
